@@ -1,4 +1,28 @@
+<style>
+  .btn {
+  background: blue;
+  color: white;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.h1 {
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px silver;
+}
+</style>
 <body>
   <h1 class="h1">Узнаем размер экрана тут!</h1>
   <button class="btn scr-sz">УЗНАТЬ РАЗМЕР ЭКРАНА</button>
+  <script type="text/javascript">
+    const btn = document.querySelector('.scr-sz');
+
+    btn.addEventListener('click', () => {
+      alert(` Размеры области просмотра - ${window.innerWidth} на ${window.innerHeight} пикселей`)
+    })
+  </script>
 </body>
